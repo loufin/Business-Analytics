@@ -7,7 +7,6 @@ head(housing.df, 9)
 #### Figure 3.1
 
 Amtrak.df <- read.csv("Amtrak.csv")
-
 # use time series analysis
 library(forecast)
 ridership.ts <- ts(Amtrak.df$Ridership, start = c(1991, 1), end = c(2004, 3), freq = 12)

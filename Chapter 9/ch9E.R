@@ -2,6 +2,7 @@
 
 auctions.df <- read.csv("eBayAuctions.csv", header=T)
 
+
 train.index <- sample(rownames(auctions.df), 0.6*dim(auctions.df)[1])
 valid.index <- setdiff(rownames(auctions.df), train.index)
 
